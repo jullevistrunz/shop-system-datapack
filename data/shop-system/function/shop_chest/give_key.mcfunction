@@ -1,0 +1,1 @@
+$give @s enchanted_book[custom_data={chest_key:"$(playerUUID0)_$(playerUUID1)_$(playerUUID2)_$(playerUUID3)"},custom_name={"italic":false,"color":"white","text":"Shop Chest Key"}]

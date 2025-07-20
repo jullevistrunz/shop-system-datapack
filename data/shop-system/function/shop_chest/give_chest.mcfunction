@@ -1,0 +1,1 @@
+$give @s chest[block_entity_data={id:sign},custom_name={"italic":false,"text":"Shop Chest"},lock={components:{"minecraft:custom_data":{chest_key:"$(playerUUID0)_$(playerUUID1)_$(playerUUID2)_$(playerUUID3)"}}}]
