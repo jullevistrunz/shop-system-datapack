@@ -12,9 +12,13 @@ $execute if score #shopSystem shopSystem_tempChestRemoveItemSuccess matches 1 ru
 
 $execute if score #shopSystem shopSystem_tempChestRemoveItemSuccess matches 1 run tellraw @s {"text": "Successfully spent $$(value).", "color":"green"}
 
+execute if score #shopSystem shopSystem_tempChestRemoveItemSuccess matches 1 run trigger seeCredits
+ 
 $execute if score #shopSystem shopSystem_tempChestRemoveItemSuccess matches 1 run execute as @a[nbt={UUID:[I; $(playerUUID0), $(playerUUID1), $(playerUUID2), $(playerUUID3)]}] run scoreboard players add @s credits $(value)
 
 $execute if score #shopSystem shopSystem_tempChestRemoveItemSuccess matches 1 run tellraw @a[nbt={UUID:[I; $(playerUUID0), $(playerUUID1), $(playerUUID2), $(playerUUID3)]}] {"text": "You earned $$(value).", "color":"green"}
+
+$execute if score #shopSystem shopSystem_tempChestRemoveItemSuccess matches 1 run execute as @a[nbt={UUID:[I; $(playerUUID0), $(playerUUID1), $(playerUUID2), $(playerUUID3)]}] run trigger seeCredits
 
 execute if score #shopSystem shopSystem_tempChestRemoveItemSuccess matches 0 run tellraw @s {"text": "Failed to interact with shop.", "color":"red"}
 

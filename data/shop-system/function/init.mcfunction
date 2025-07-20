@@ -26,3 +26,5 @@ data modify storage shop_system:chests temp.playerUUID2 set value 0
 data modify storage shop_system:chests temp.playerUUID3 set value 0
 
 scoreboard objectives add shopChestKey trigger
+
+scoreboard objectives add playerTick dummy
