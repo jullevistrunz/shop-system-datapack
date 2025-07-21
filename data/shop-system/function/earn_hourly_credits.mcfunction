@@ -1,6 +1,6 @@
-scoreboard players add @s credits 10
+scoreboard players add @s credits 20
 
-tellraw @s {"text": "You earned $10.", "color":"green"}
+tellraw @s {"text": "You earned $20.", "color":"green"}
 
 trigger seeCredits
 
