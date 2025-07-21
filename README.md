@@ -44,4 +44,4 @@ Place down a single shop chest, set the desired stack size and attach a sign of 
 ## How to earn credits
 
 - By selling items using the shop system
-- Hourly: $10
+- Hourly: $20
